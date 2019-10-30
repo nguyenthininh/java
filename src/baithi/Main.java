@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String args[]) {
         ArrayList<Hotel> hotels = new ArrayList<>();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
             hotels.add(new Hotel());
         }
 
