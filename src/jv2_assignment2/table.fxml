@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<Pane fx:controller="jv2_assignment2.ListStudent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tbView" layoutX="33.0" layoutY="171.0" prefHeight="200.0" prefWidth="535.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="87.0" text="id" />
+          <TableColumn fx:id="colName" prefWidth="198.0" text="Fullname" />
+            <TableColumn fx:id="colAge" prefWidth="116.0" text="Age" />
+            <TableColumn fx:id="colMark" prefWidth="179.0" text="Mark" />
+        </columns>
+      </TableView>
+      <Button onAction="#newStudent" layoutX="443.0" layoutY="403.0" mnemonicParsing="false" text="Add Student" />
+      <TextField fx:id="txtName" layoutX="80.0" layoutY="44.0" prefHeight="31.0" prefWidth="262.0" promptText="search name" />
+      <Button onAction="#search" layoutX="393.0" layoutY="44.0" mnemonicParsing="false" text="Search" />
+   </children>
+</Pane>
